@@ -155,7 +155,7 @@ if __name__ == '__main__':
             url_site = url_site
             main(url_site, choice)
             # agendamento para rodar a cada 30 minutos
-            schedule.every(1).minutes.do(main(url_site, choice))
+            schedule.every(30).minutes.do(main(url_site, choice))
             while True:
                 schedule.run_pending()
                 sleep(1)
