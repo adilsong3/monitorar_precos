@@ -1,6 +1,6 @@
 [![author](https://img.shields.io/badge/author-Adilsong-red.svg)](https://www.linkedin.com/in/adilson-gustavo-marcondes-barreto-de-souza-a74b98133/) [![](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-365/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-<h1 align="center">Robo Para Acompanhar Preços</h1>
+<h1 align="center">Robo Para Monitorar Preços</h1>
 
 <sub>*Graduando em Ciência de Dados na Uninter e Cursando Mestres da Automação*</sub>
 
