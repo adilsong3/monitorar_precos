@@ -7,7 +7,7 @@ import openpyxl
 import os
 import schedule
 
-def iniciar_driver():
+def init_driver():
     chrome_options = Options()
 
     arguments = ['--lang=pt-BR', '--window-size=1200,1400', '--incognito']
@@ -15,10 +15,10 @@ def iniciar_driver():
     for argument in arguments:
         chrome_options.add_argument(argument)
 
-    caminho_padrao_para_download = 'D:\\Adilson\\Python\\2024\\monitorar_precos_destrava'
+    path_to_download = 'D:\\Adilson\\Python\\2024\\monitorar_precos_destrava'
 
     chrome_options.add_experimental_option("prefs", {
-        'download.default_directory': caminho_padrao_para_download,
+        'download.default_directory': path_to_download,
         'download.directory_upgrade': True,
         'download.prompt_for_download': False,
         "profile.default_content_setting_values.notifications": 2, 
@@ -80,7 +80,7 @@ def product_choice():
     
 # ○ Verificar o preço atual. # ○ Guardar o valor do preço(somente o valor numérico, não em texto)
 def extract_name_and_price(url_site, choice):
-    driver = iniciar_driver()
+    driver = init_driver()
     driver.get(url_site)
     sleep(10)
     driver.execute_script("window.scrollTo(0, 200);")
